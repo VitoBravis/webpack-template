@@ -1,10 +1,10 @@
 import { ITransitionData } from '@barba/core/dist/core/src/defs';
 import Component from '@/base/component';
-import Example from '@/components/ui/example/example';
+import Table from "@/components/sections/table/table";
 
 // Набор всех компонентов, для которых будет применяться стандартная инициализация
 const allComponents: Record<string, any & Component<HTMLElement>> = {
-    example: Example,
+    table: Table,
 };
 
 export default {

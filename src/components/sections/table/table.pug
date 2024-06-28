@@ -1,0 +1,8 @@
+mixin table(props)
+    .table&attributes(attributes)(data-component='table')
+        .table__cards
+            each item in Array(4).fill(null)
+                +card()
+
+        button.table__shuffle Reset
+

@@ -1,0 +1,43 @@
+.table {
+    $root: &;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30vh;
+    width: 100vw;
+    height: 100vh;
+    background-color: lightgray;
+    z-index: 10;
+
+    &__cards {
+        display: flex;
+        perspective: 25vw;
+        gap: 40px;
+    }
+
+    &__shuffle {
+        position: absolute;
+        bottom: 10vh;
+        font-size: 24px;
+        border-radius: 20px;
+        padding: 12px 60px;
+        background-color: black;
+        color: white;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.4s;
+
+        &:hover {
+            opacity: 0.7;
+        }
+
+        &.show {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}
